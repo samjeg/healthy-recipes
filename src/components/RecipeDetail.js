@@ -1,7 +1,7 @@
 import React  from 'react';
 import './styles/reset.css';
 import './styles/detail.css';
-
+import '../data/recipe_details.json';
 
 
 const RecipeDetail = () => {
@@ -28,9 +28,11 @@ const RecipeDetail = () => {
                 </ul>
             </div>
             <hr />
-
-            <img class="img" alt="no image" src={require("../images/honza-vojtek-A39EqNtDpZs-unsplash.jpg")} align="Top"/> {/*Image not renderring*/}
-            <p class="summary">Lemon Or Lime Glaze For Chicken, Fish, Or Vegetables might be just the side dish you are searching for. One serving contains <b>18 calories</b>, <b>0g of protein</b>, and <b>0g of fat</b>. This recipe serves 4 and costs 19 cents per serving. This recipe is liked by 1 foodies and cooks. If you have sugar, cornstarch, parsley, and a few other ingredients on hand, you can make it. It is a good option if you're following a <b>gluten free, dairy free, and vegetarian</b> diet. From preparation to the plate, this recipe takes around <b>45 minutes</b>. All things considered, we decided this recipe <b>deserves a spoonacular score of 19%</b>. This score is not so excellent. Try <a href="https://spoonacular.com/recipes/lemon-lime-glaze-202518">Lemon-Lime Glaze</a>, <a href="https://spoonacular.com/recipes/sauces-apricot-lemon-glaze-lime-daiquiri-pineapple-ginger-119840">Sauces - Apricot Lemon Glaze/ Lime Daiquiri/ Pineapple Ginger</a>, and <a href="https://spoonacular.com/recipes/ginger-lime-chicken-wings-with-rum-glaze-492308">Ginger-Lime Chicken Wings with Rum Glaze</a> for similar recipes."</p>
+            
+            <div class="container">
+                <img class="img" alt="no image" src="" align="Top"/> {/*Image not renderring*/}
+                <p class="summary">Lemon Or Lime Glaze For Chicken, Fish, Or Vegetables might be just the side dish you are searching for. One serving contains <b>18 calories</b>, <b>0g of protein</b>, and <b>0g of fat</b>. This recipe serves 4 and costs 19 cents per serving. This recipe is liked by 1 foodies and cooks. If you have sugar, cornstarch, parsley, and a few other ingredients on hand, you can make it. It is a good option if you're following a <b>gluten free, dairy free, and vegetarian</b> diet. From preparation to the plate, this recipe takes around <b>45 minutes</b>. All things considered, we decided this recipe <b>deserves a spoonacular score of 19%</b>. This score is not so excellent. Try <a href="https://spoonacular.com/recipes/lemon-lime-glaze-202518">Lemon-Lime Glaze</a>, <a href="https://spoonacular.com/recipes/sauces-apricot-lemon-glaze-lime-daiquiri-pineapple-ginger-119840">Sauces - Apricot Lemon Glaze/ Lime Daiquiri/ Pineapple Ginger</a>, and <a href="https://spoonacular.com/recipes/ginger-lime-chicken-wings-with-rum-glaze-492308">Ginger-Lime Chicken Wings with Rum Glaze</a> for similar recipes."</p>
+            </div>
 
             <ul class="attributes-2">
                 <li><p>healthy:</p>
@@ -75,7 +77,7 @@ const RecipeDetail = () => {
             <p>By Samuel Jegede</p> 
         </footer>
         </div>
-        );
+    );
 }
 
 export default RecipeDetail;
