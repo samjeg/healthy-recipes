@@ -115,6 +115,7 @@ article .attributes .cooking-time {
 article .attributes .ratings-label {
     font-weight: 700;
     font-size: 1rem;   
+    margin-right: 0.25rem;
 }
 
 article .attributes .ratings {

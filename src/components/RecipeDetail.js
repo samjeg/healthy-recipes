@@ -2,9 +2,21 @@ import React  from 'react';
 import './styles/reset.css';
 import './styles/detail.css';
 import '../data/recipe_details.json';
+import Items from './Items';
+import Stars from './Stars2';
 
 
 const RecipeDetail = () => {
+    const steps = ["1/2 cup unsalted chicken broth", "2 teaspoons cornstarch",
+                   "1 teaspoon lemon or lime juice", "1 teaspoon grated lemon or lime peel",
+                   "1 tablespoon chopped parsley", "1 tablespoon sugar"];
+
+    const ingr = ["Cornstarch", "Limepeel", "Parsley", "Sugar", "Lime Juice", "Chicken Broth"];
+
+    const name1 = "Steps";
+
+    const name2 = "Ingredients";
+
 	return (  
         <div>      
 		<section class="head-panel">
@@ -19,13 +31,7 @@ const RecipeDetail = () => {
                 <label class="cooking-time-label" for="prep-time">Cooking time:</label>
                 <time class="cooking-time" datetime="PT4H18M3S">2h 30m</time>
                 <label class="ratings-label" for="ratings">ratings:</label> {/*Rating not in the correct position*/}
-                <ul class="ratings">
-                    <li><i class="fas fa-star"></i></li>
-                    <li><i class="fas fa-star"></i></li>
-                    <li><i class="fas fa-star"></i></li>
-                    <li><i class="fas fa-star"></i></li>
-                    <li><i class="fas fa-star"></i></li>
-                </ul>
+                <Stars size={5} />
             </div>
             <hr />
             
@@ -49,28 +55,8 @@ const RecipeDetail = () => {
             </ul>   
 
             <section class="prep-info">
-                <div class="container-steps"> {/*Instructions should be paragraphs not list items*/}
-                    <label class="label-steps" for="steps">Steps:</label>
-                    <ul class="steps">
-                        <li>1/2 cup unsalted chicken broth</li>
-                        <li>2 teaspoons cornstarch</li>
-                        <li>1 teaspoon lemon or lime juice</li>
-                        <li>1 teaspoon grated lemon or lime peel</li>
-                        <li>1 tablespoon chopped parsley</li>
-                        <li>1 tablespoon sugar</li>                                        
-                    </ul>
-                </div>
-                <div class="container-ingr">
-                    <label class="label-ingr" for="ingredients">Ingredients:</label>
-                    <ul class="ingredients" >
-                        <li>Cornstarch</li>
-                        <li>Limepeel</li>
-                        <li>Parsley</li>
-                        <li>Sugar</li>
-                        <li>Lime Juice</li>
-                        <li>Chicken Broth</li>     
-                    </ul>
-                </div>
+                <Items list={steps} label_={name1} /> 
+                <Items list={ingr} label_={name2} />
             </section>
         </article>
         <footer>  
