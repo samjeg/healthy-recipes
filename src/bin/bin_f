@@ -1,0 +1,27 @@
+Healthy Recipe's URL: https://api.spoonacular.com/recipes/?apiKey=689a11aea73841168fb75f15765cf0d2
+complexSearch?apiKey=689a11aea73841168fb75f15765cf0d2&query=chicken&diet=vegetarian&tolerance=gluten
+
+Single Healthy Recipe URL: GET https://api.spoonacular.com/recipes/{id}/ingredientWidget.json/?apiKey=689a11aea73841168fb75f15765cf0d2
+
+            <h1>{item.strDrink}</h1>
+            <img src={item.strDrinkThumb} />z
+
+	const [item, setItem] = useState({});
+
+	let recipesURL = `https://api.spoonacular.com/recipes/complexSearch?
+	apiKey=689a11aea73841168fb75f15765cf0d2&query=chicken&diet=vegetarian&tolerance=gluten`;
+
+    recipesURL = recipesURL.replace('\n', '');
+
+	useEffect(() => {
+		fetchItem();
+        console.log(item);
+	}, []);
+
+    const fetchItem = async () => {
+    	let fetchItems = await fetch(recipesURL);
+    	fetchItems = await fetchItems.json();
+        const item = fetchItems.results[0].title;
+    	console.log("items: "+item);
+        setItem(item);
+    };

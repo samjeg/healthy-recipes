@@ -1,0 +1,29 @@
+.container-steps {
+    width: 25vw;
+    margin-left: 20vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-steps .label-steps {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0 0 -1.2rem;
+    display: flex;
+    height: 1.4rem;
+}
+
+.container-steps .steps {
+    list-style: square;
+    font-weight: 600;
+    margin: 1rem 0 0 1rem;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: flex-start;
+}
+
+.container-steps .steps li {
+    margin-bottom: 0.4rem;
+}

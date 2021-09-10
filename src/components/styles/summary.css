@@ -1,0 +1,50 @@
+div {
+    width: 80vw;
+    margin: 0 auto 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+div .attributes {
+    margin-top: 6rem;
+    height: 5vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+div .attributes h2 {
+    margin-left: 0.2rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+div .attributes .prep-time-label {
+    margin: 0.25rem 0.1rem 0 1rem;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+div .attributes .prep-time {
+    margin: 0.25rem 0.5rem 0.05rem 0.1rem;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+div .attributes .cooking-time-label {
+    margin: 0.25rem 0.1rem 0 1rem;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+div .attributes .cooking-time {
+    margin: 0.25rem auto 0.05rem 0.1rem;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+div .attributes .ratings-label {
+    font-weight: 700;
+    font-size: 1rem;   
+    margin-right: 0.25rem;
+}

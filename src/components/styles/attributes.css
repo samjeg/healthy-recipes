@@ -1,0 +1,39 @@
+.container {
+    width: 80vw;
+    margin: 0 auto 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .attributes-2 {
+    background-color: #55ab55;
+    min-width: 75vw;
+    height: 8vh;
+    margin: 2rem auto 2rem auto;
+
+    /* spreading list elements evenly accross the page */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container .attributes-2 li {
+    width: 11vw;
+    height: 3.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .attributes-2 li i {
+    color: #ffff33; /* light yellow*/
+    font-size: 2rem;
+}
+
+.container .attributes-2 li p {
+    color: #ffff33; /* light yellow*/
+    font-size: 1rem;
+    font-weight: 600;
+    margin-right: 0.3rem;
+}
