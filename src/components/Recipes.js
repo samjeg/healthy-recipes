@@ -1,6 +1,6 @@
 import React  from 'react';
 import './styles/reset.css';
-import './styles/recipes.css';
+import './styles/recipes_2.css';
 import data from '../data/recipe_items.json';
 import Stars from './Stars';
 import Positives from './Positives';
@@ -14,11 +14,11 @@ const Recipes = () => {
         
     return (
         <div>
-            <section className="head-panel">
-                <i className="fas fa-carrot"></i>
-                <h1>healthy recipes</h1>
-            </section>
             <section className="recipes-container">
+                <section className="head-panel">
+                    <i className="fas fa-carrot"></i>
+                    <h1>healthy recipes</h1>
+                </section>
                 <h2 className="recipes-title">Recipes</h2>
                 <Switch>
                   <Route exact path="/">
@@ -41,10 +41,10 @@ const Recipes = () => {
                         </ul>
                   </Route> 
                 </Switch>
+                <footer>  
+                    <p>by Samuel Jegede </p> 
+                </footer>
             </section>
-            <footer>  
-                <p>By Samuel Jegede</p> 
-            </footer>
         </div>
     );
 }

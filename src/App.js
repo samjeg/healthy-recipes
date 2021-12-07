@@ -1,5 +1,6 @@
 import React from 'react';
 import Recipes from './components/Recipes';
+import Recipes_2 from './components/Recipes_2';
 import RecipeDetail from './components/RecipeDetail';
 import Stars from './components/Stars2';
 import Attributes from './components/Attributes';
@@ -10,9 +11,9 @@ import './App.css';
 
 function App() {
 	return (
-		<div>
-	        <RecipeDetail />
-        </div>
+		<Router>
+	        <Recipes />
+        </Router>
     );  
 }
 

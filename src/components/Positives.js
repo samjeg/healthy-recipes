@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles/reset.css';
-import './styles/recipes.css';
+import './styles/recipes_2.css';
 
 const Positives = ({ veg, vegan, healthy }) => {
     let veg_value = null;
