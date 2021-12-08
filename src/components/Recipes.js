@@ -41,7 +41,7 @@ const Recipes = () => {
                         </ul>
                   </Route> 
                 </Switch>
-                <footer>  
+                <footer className="footer">  
                     <p>by Samuel Jegede </p> 
                 </footer>
             </section>

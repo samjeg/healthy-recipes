@@ -155,7 +155,6 @@
 
 /* full width footer sticking to the bottom of the page */
 footer {
-	background-color: green;
 	left: 0;
 	bottom: 0;
     width: 100vw;
